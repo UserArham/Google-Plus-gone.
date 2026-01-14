@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A heartfelt farewell to Google+ with a beautiful landing page.">
+    <meta name="description" content="A heartfelt farewell to Google+ with reasons for its shutdown.">
     <title>Google+ is Gone</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
@@ -19,7 +19,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
             padding: 20px;
         }
         main {
@@ -28,7 +28,7 @@
             border-radius: 20px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
             text-align: center;
-            max-width: 480px;
+            max-width: 600px;
             width: 100%;
             animation: fadeIn 1s ease forwards;
             opacity: 0;
@@ -37,21 +37,35 @@
             to { opacity: 1; }
         }
         .logo {
-            width: 180px;
-            margin: 0 auto 30px auto;
+            width: 160px;
+            margin: 0 auto 25px auto;
         }
         h1 {
-            font-size: 2.8rem;
+            font-size: 2.5rem;
             color: #d32f2f;
             margin-bottom: 15px;
         }
+        h2 {
+            font-size: 1.5rem;
+            color: #1976d2;
+            margin: 25px 0 10px 0;
+        }
         p {
-            font-size: 1.15rem;
-            margin: 15px 0;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin: 12px 0;
+            text-align: left;
             color: #444;
         }
+        ul {
+            text-align: left;
+            margin: 10px 0 20px 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
         .emoji {
-            font-size: 2.8rem;
+            font-size: 3rem;
             margin: 25px 0;
             animation: bounce 2s infinite;
         }
@@ -71,15 +85,45 @@
             color: #0d47a1;
             text-decoration: underline;
         }
+        @media (max-width: 600px) {
+            main {
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 1.3rem;
+            }
+            p {
+                font-size: 1rem;
+            }
+            .emoji {
+                font-size: 2.5rem;
+            }
+        }
     </style>
 </head>
 <body>
     <main>
         <img class="logo" src="https://static0.xdaimages.com/wordpress/wp-content/uploads/2018/10/google-plus-logo.png" alt="Google+ Logo">
         <h1>Google+ is Gone</h1>
-        <p>After a long and meaningful run, Google+ has officially shut down.</p>
-        <p>Thank you to everyone who shared, connected, and posted over the years.</p>
+        <p>After a long and meaningful run, Google+ has officially shut down. Thank you to everyone who shared, connected, and posted over the years.</p>
         <div class="emoji" role="img" aria-label="Broken heart and powered-off phone">💔📴</div>
+
+        <h2>Main Reason for Shutdown</h2>
+        <p>Google+ shut down primarily due to low user engagement (90% of sessions under 5 seconds) and two significant data breaches that exposed user data, forcing Google to accelerate the shutdown from August 2019 to April 2019 to protect users. Despite being linked to other Google services, it failed to compete with Facebook, struggled with a confusing user experience (like "Circles"), and couldn't find a compelling niche, ultimately becoming a security liability and a business failure.</p>
+
+        <h2>Key Reasons for Shutdown</h2>
+        <ul>
+            <li><strong>Low Usage:</strong> Most sessions were accidental clicks lasting only a few seconds, according to Appleton Creative and New Atlas.</li>
+            <li><strong>Data Breaches:</strong> A March 2018 bug potentially exposed profile data for up to 500,000 users, and a second breach in late 2018 affected 52.5 million users, notes CNN and CNBC.</li>
+            <li><strong>Failed Competition:</strong> Couldn’t attract users away from Facebook and Twitter, failing to meet consumer expectations or find a distinct purpose (BBC, Failory).</li>
+            <li><strong>Confusing Features & Bad PR:</strong> Mandatory account linking for YouTube and confusing interface elements (like "Plus One") created a poor user experience (YouTube, BBC).</li>
+        </ul>
+
+        <p>In essence, Google+ was a product Google couldn't make successful, and security issues provided the final push to shut it down for consumers in April 2019 (Verge, Guardian).</p>
+
         <p>Explore other Google services <a href="https://www.google.com/" target="_blank" rel="noopener noreferrer">here</a>.</p>
     </main>
 </body>
